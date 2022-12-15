@@ -35,8 +35,6 @@ print("--------------------------------------      -----------------------------
 # Step 1 : Find the device width and height
 deviceSize = driver.get_window_size()
 
-
-
 # Step 2 : Find the x,y coordinate to swipe from Bottom to Top
 #LG2 MAX: 719x1599
 startx = 688

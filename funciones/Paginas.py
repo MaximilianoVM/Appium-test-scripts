@@ -14,9 +14,9 @@ class AlumnosUABC(object):
         self.driver.find_element(By.XPATH, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.view.View[3]/android.widget.ListView/android.view.View/android.view.View").click()
         time.sleep(1)
 
-    def ingresar(self):
-        usuario = ""
-        contra = ""
+    def ingresar(self, correo, contrasenia):
+        usuario = correo
+        contra = contrasenia
         ###################
 
         self.driver.find_element(By.ID, "_com_liferay_login_web_portlet_LoginPortlet_INSTANCE_0_login").click()
