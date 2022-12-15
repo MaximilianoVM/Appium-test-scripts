@@ -7,6 +7,7 @@ import time
 from appium import webdriver
 from selenium.webdriver.common.by import By
 import appium.webdriver.common.touch_action
+import funciones.datos as datos
 
 def swipe():
     # Step 1 : Find the device width and height
@@ -61,8 +62,8 @@ driver.find_element(By.ID, "collapsibleNavbar").click()
 time.sleep(1)
 
 ###################
-usuario=""
-contra=""
+usuario= nombre
+contra= contrasena
 ###################
 
 driver.find_element(By.ID, "_com_liferay_login_web_portlet_LoginPortlet_INSTANCE_0_login").click()

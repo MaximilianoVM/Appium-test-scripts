@@ -7,6 +7,7 @@ from funciones.Navegadores import ChromeNav
 from appium import webdriver
 from selenium.webdriver.common.by import By
 import appium.webdriver.common.touch_action
+import funciones.datos as datos
 
 def swipe():
     # Step 1 : Find the device width and height
@@ -67,8 +68,8 @@ driver.find_element(By.XPATH, '//android.view.View[@content-desc="Entrar"]').cli
 time.sleep(4)
 
 ###################
-usuario=""
-contra=""
+usuario= nombre
+contra= contrasena
 ###################
 
 barraUsuario = driver.find_element(By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.EditText')
